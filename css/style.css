@@ -123,18 +123,60 @@ a {
 }
 
 .main-section .parent .select .player-name {
+    padding: 10px 10px;
+    color: #fff;
+    text-align: start;
     width: 100%;
     height: 300px;
-    background: red;
+    background: #000;
+}
+
+.main-section .parent .select .player-name h2 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.main-section .parent .select .player-name ul li {
+    margin: 15px 0;
 }
 
 .main-section .parent .select .price {
+    padding: 10px 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 100%;
-    height: 600px;
     margin-top: 50px;
-    background: green;
+    background: black;
     text-align: center;
+    color: #fff;
 }
+
+.main-section .parent .select .price h1 {
+    margin-bottom: 40px;
+}
+
+.main-section .parent .select .price h4 {
+    margin: 20px 0;
+}
+
+input {
+    margin-left: 30px;
+    padding: 10px 0px;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.main-section .parent .select .price button {
+    font-size: 18px;
+    background: rgb(59, 0, 186);
+    color: #fff;
+    padding: 15px 60px;
+    margin: 20px 0;
+}
+
+
+
+
 
 footer {
     margin-top: 100px;
