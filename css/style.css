@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(36, 36, 36);
+
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+
+/* banner css start */
+#banner-part {
+    background: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+#banner-part .overlay {
+    width: 100%;
+    color: #fff;
+    background: rgba(3, 3, 3, 0.8);
+    text-align: center;
+    padding: 200px 0;
+}
+
+#banner-part .overlay h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+#banner-part .overlay p {
+    width: 1000px;
+    margin: 40px auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+
+/* banner css end */
+
+
+/* main section css start */
+
+.main-section {
+    margin-top: 100px;
+}
+
+.main-section .parent {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.main-section .parent .players {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main-section .parent .players .player {
+    background: black;
+    width: 30%;
+    margin-bottom: 20px;
+    border: 1px solid grey;
+    color: #fff;
+}
+
+.main-section .parent .players .player .img {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+.main-section .parent .players .player .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-section .parent .players .player .text {
+    text-align: center;
+    padding: 20px;
+}
+
+.main-section .parent .players .player .text h4 {
+    margin: 10px 0;
+}
+
+.main-section .parent .players .player .text button {
+    margin-top: 30px;
+    padding: 10px 40px;
+    background: rgba(37, 4, 251, 0.525);
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+}
+
+.main-section .parent .select {
+    width: 25%;
+}
+
+.main-section .parent .select .player-name {
+    width: 100%;
+    height: 300px;
+    background: red;
+}
+
+.main-section .parent .select .price {
+    width: 100%;
+    height: 600px;
+    margin-top: 50px;
+    background: green;
+    text-align: center;
+}
+
+footer {
+    margin-top: 100px;
+    border-top: 2px solid grey;
+    padding: 60px 0;
+    text-align: center;
+    color: rgb(0, 221, 255);
+}
+
+
+/* main section css end */
