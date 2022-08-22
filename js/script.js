@@ -41,6 +41,11 @@ function playerAdding(element) {
 
 document.getElementById('calculate').addEventListener('click', function () {
     const perPlayerCost = getInputFieldValueById('per-player');
+    if (isNaN(perPlayerCost)) {
+        alert('Please Input A Number');
+        return;
+
+    }
     const PlayerPerName = getPlayerLength('player-id');
 
     const calculatePlayerCost = perPlayerCost * PlayerPerName;
@@ -57,6 +62,10 @@ document.getElementById('calculate-total').addEventListener('click', function ()
 
     const managerSalary = getInputFieldValueById('manager');
     const directorSalary = getInputFieldValueById('director');
+    if (isNaN(managerSalary) || isNaN(directorSalary)) {
+        alert('Please Input A Number');
+        return;
+    }
 
     const bothSalary = managerSalary + directorSalary;
 
