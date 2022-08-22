@@ -116,6 +116,7 @@ a {
     color: #fff;
     font-size: 18px;
     border: 0;
+    cursor: pointer;
 }
 
 .main-section .parent .select {
@@ -138,6 +139,7 @@ a {
 
 .main-section .parent .select .player-name ul li {
     margin: 15px 0;
+
 }
 
 .main-section .parent .select .price {
