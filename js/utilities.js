@@ -14,5 +14,7 @@ function getPlayerLength(playerId) {
 
 function getTextElementValueById(elementId, value) {
     const textElement = document.getElementById(elementId);
-    textElement.innerText = value;
+    const textElementString = (textElement.innerText = value);
+    const textElementNumber = parseInt(textElementString);
+    return textElementNumber;
 }
