@@ -8,7 +8,7 @@ function showPlayerName(namePlayers) {
         const player = namePlayers[i].playerName;
 
         const li = document.createElement("li");
-        li.innerText = player;
+        li.innerText = (i + 1) + '. ' + player;
         playerId.appendChild(li);
 
     }
@@ -17,10 +17,20 @@ function showPlayerName(namePlayers) {
 
 function playerAdding(element) {
     const playerName = element.parentNode.children[0].innerText;
-
     const name = {
         playerName: playerName,
     }
     players.push(name);
     showPlayerName(players);
 }
+
+document.getElementById('calculate').addEventListener('click', function () {
+    const perPlayerCost = getInputFieldValueById('per-player');
+    const PlayerPerName = getPlayerLength('player-id');
+
+    const calculatePlayerCost = perPlayerCost * PlayerPerName;
+
+    getTextElementValueById('player-cost', calculatePlayerCost);
+
+})
+
