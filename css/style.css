@@ -119,6 +119,11 @@ a {
     cursor: pointer;
 }
 
+.main-section .parent .players .player .text button:disabled {
+    background: rgba(255, 255, 255, 0.333);
+    color: #fff;
+}
+
 .main-section .parent .select {
     width: 25%;
 }

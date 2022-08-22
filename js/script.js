@@ -11,25 +11,33 @@ function showPlayerName(namePlayers) {
         const li = document.createElement("li");
         li.innerText = (i + 1) + '. ' + player;
         playerId.appendChild(li);
-
     }
-    const playersLength = getPlayerLength('player-id');
-    if (playersLength > 5) {
-        alert("You Can't Add More Than 5 Player");
-        return;
-    }
-
 
 }
 
+
+
 function playerAdding(element) {
+
+    const playersLength = getPlayerLength('player-id');
+    if (playersLength > 4) {
+        alert("You Can't Add More Than 5 Player");
+        return;
+    }
     const playerName = element.parentNode.children[0].innerText;
     const name = {
         playerName: playerName,
     }
     players.push(name);
     showPlayerName(players);
+    element.setAttribute('disabled', true);
+
+
 }
+
+
+
+
 
 document.getElementById('calculate').addEventListener('click', function () {
     const perPlayerCost = getInputFieldValueById('per-player');
