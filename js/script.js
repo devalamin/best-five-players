@@ -15,8 +15,6 @@ function showPlayerName(namePlayers) {
 
 }
 
-
-
 function playerAdding(element) {
 
     const playersLength = getPlayerLength('player-id');
@@ -34,9 +32,6 @@ function playerAdding(element) {
 
 
 }
-
-
-
 
 
 document.getElementById('calculate').addEventListener('click', function () {
@@ -73,8 +68,6 @@ document.getElementById('calculate-total').addEventListener('click', function ()
 
     const finalTotal = document.getElementById('final-total');
     finalTotal.innerText = totalSalary;
-
-
 
 
 })
